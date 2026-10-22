@@ -1,0 +1,21 @@
+:root{--bg:#f3f6f8;--ink:#14232e;--muted:#52636f;--block:#e8b631;--water:#2a8fd6;--grid:#c9d4db;--panel:#fff;--accent:#14232e}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1a22;--ink:#e7eef2;--muted:#93a5b1;--block:#d9a62a;--water:#3fa2ea;--grid:#2a3b47;--panel:#16252f;--accent:#e7eef2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Trebuchet MS","Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 20px}
+h1{font-size:2.4rem;margin:0 0 4px;letter-spacing:-.02em}
+.lede{color:var(--muted);margin:0 0 24px}
+label{font-weight:700;display:block;margin-bottom:6px}
+.row{display:flex;gap:8px}
+input{flex:1;min-width:0;padding:10px 12px;font:inherit;border:2px solid var(--grid);border-radius:6px;background:var(--panel);color:var(--ink)}
+button{padding:10px 18px;font:inherit;font-weight:700;border:0;border-radius:6px;background:var(--accent);color:var(--bg);cursor:pointer}
+input:focus-visible,button:focus-visible{outline:3px solid var(--water);outline-offset:2px}
+#error{color:#d64545;min-height:1.5em;margin:6px 0 0}
+.result{font-size:1.4rem;margin:12px 0}
+.result span{font-size:2.6rem;font-weight:700;color:var(--water)}
+#chart{background:var(--panel);border:1px solid var(--grid);border-radius:8px;padding:12px;overflow-x:auto}
+#chart svg{display:block;width:100%;height:auto;min-width:320px}
+.legend{color:var(--muted);font-size:.9rem}
+.sw{display:inline-block;width:14px;height:14px;margin:0 6px 0 12px;vertical-align:-2px;border-radius:2px}
+.sw:first-child{margin-left:0}
+.sw.block{background:var(--block)}.sw.water{background:var(--water)}

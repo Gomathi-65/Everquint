@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Water Tank</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Water tank</h1>
+  <p class="lede">Enter block heights separated by commas. Heights are whole numbers, 0 or more.</p>
+  <form id="form">
+    <label for="heights">Block heights</label>
+    <div class="row">
+      <input id="heights" value="0,4,0,0,0,6,0,6,4,0" autocomplete="off" spellcheck="false">
+      <button type="submit">Calculate</button>
+    </div>
+    <p id="error" role="alert"></p>
+  </form>
+  <p class="result"><span id="total">18</span> units of water</p>
+  <div id="chart" aria-live="polite"></div>
+  <p class="legend"><i class="sw block"></i>Block <i class="sw water"></i>Water</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
