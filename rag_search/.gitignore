@@ -1,0 +1,3 @@
+data/
+results/human_eval.csv
+__pycache__/

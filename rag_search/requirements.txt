@@ -1,0 +1,11 @@
+numpy
+scikit-learn
+rank-bm25
+nltk
+rouge-score
+streamlit
+# Better embeddings (recommended, downloads a ~90 MB model on first use):
+# sentence-transformers
+# Optional LLM summaries / LLM-written test queries:
+# anthropic
+# openai
