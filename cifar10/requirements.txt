@@ -1,0 +1,6 @@
+# Colab already has torch/torchvision; locally install the build for your machine from pytorch.org
+torch>=2.2
+torchvision>=0.17
+numpy
+matplotlib
+pytest
