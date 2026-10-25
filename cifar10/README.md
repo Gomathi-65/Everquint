@@ -101,7 +101,7 @@ Test accuracy difference (residual - baseline): **-0.30 points**.
 - In this setup the residual blocks did **not** improve the model: the residual network is 0.30 points lower on test accuracy and 0.66 points lower on validation accuracy, with slightly higher test loss.
 - This is one run per model with one seed. On a 10,000-image test set, a 0.3 point gap is 30 images, which is within what different seeds could change. The honest conclusion is "no clear difference here", not "residual is worse" and not "residual is better".
 - A possible explanation (a hypothesis, not tested): the network is shallow (6 convolutional layers), and skip connections mainly help very deep networks. Testing it would need a deeper network and several seeds.
-- Per-class test accuracy is similar for both models. The hardest classes are cat (0.64 / 0.66), bird (0.71 / 0.70) and dog (0.78 / 0.76); the easiest are automobile, ship and truck (above 0.90). Cats, dogs and birds are also the most confused in the confusion matrices (`runs/<model>/confusion_matrix.png`).
+- Per-class test accuracy is similar for both models. The hardest classes are cat (0.64 / 0.66), bird (0.71 / 0.70) and dog (0.78 / 0.76); the easiest are automobile, ship and truck (above 0.90). The confusion matrices are saved in runs/<model>/confusion_matrix.png. in the confusion matrices (`runs/<model>/confusion_matrix.png`).
 - Only 10 epochs were trained; the validation accuracy was still rising at the end (best epoch 10 for both), so longer training would likely score higher for both models.
 
 Plots: `results/baseline_curves.png`, `results/residual_curves.png`, `results/comparison_curves.png`, and the misclassified images in `results/*_misclassified.png`.
